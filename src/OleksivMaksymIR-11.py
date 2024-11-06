@@ -1,6 +1,6 @@
 class Camera:
-    def __init__(self, produce_name: str, memory: float, zoom: float):
-        self.__produce_name = produce_name
+    def __init__(self, product_name: str, memory: float, zoom: float):
+        self.__product_name = product_name
         self.__memory = memory
         self.__zoom = zoom
         num = 10
@@ -8,14 +8,11 @@ class Camera:
 
     @property
     def produce_name(self):
-        return self.__produce_name
-
-    def get_produce_name(self):
-        return self.__produce_name
+        return self.__product_name
 
     @produce_name.setter
     def produce_name(self, el):
-        self.__produce_name = el
+        self.__product_name = el
 
     @property
     def memory(self):
